@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Home</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Cut|Nova+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style_index.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/categories.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav style="position: fixed; top: 0; width: 100%; z-index: 1;">
+    <div class="logo">
+      <h3><a href="#" class="logo-name">VortexWatches</a></h3>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="contact.html">ContactUs</a></li>
+      <li><a href="login.html" id="login">Login</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <div class="index-main-img wrapper">
+    <a href="#"><img class="image" src="images\index-img\carousal1.jpg" alt="Image 1" id="main-index-img"></a>
+    <a href="#"><img class="image" src="images\index-img\carousal4.jpg" alt="Image 2" id="main-index-img"></a>
+    <a href="#"><img class="image" src="images\index-img\carousal5.jpg" alt="Image 3" id="main-index-img"></a>
+  </div>
+
+  <script>
+    var images = document.querySelectorAll('.image');
+    var currentIndex = 0;
+
+    function fadeInNextImage() {
+      var nextIndex = (currentIndex + 1) % images.length;
+      images[nextIndex].classList.add('show');
+      setTimeout(function () {
+        images[currentIndex].classList.remove('show');
+        currentIndex = nextIndex;
+      }, 1000); // Adjust timing here (1 second in this case)
+    }
+
+    fadeInNextImage(); // Start the slideshow
+
+    setInterval(fadeInNextImage, 3000); // Repeat every 3 seconds
+  </script>
+
+
+  <br>
+
+  <div class="index-offers-img">
+    <a href="categories.html"><img src="images/index-img/brm1.jpg" alt="Image 1"></a>
+    <a href="categories.html"><img src="images/index-img/brm2.jpg" alt="Image 1"></a>
+    <a href="categories.html"><img src="images/index-img/brw3.jpg" alt="Image 1"></a>
+    <a href="categories.html"><img src="images/index-img/brw8.jpg" alt="Image 1"></a>
+  </div>
+
+  <br><br>
+
+  <div class="index-grid-img-1">
+    <a href="categories.html"><img src="images/index-img/brm4.jpg" alt="" srcset=""></a>
+    <a href="categories.html"><img src="images/index-img/brm5.jpg" alt="" srcset=""></a>
+    <a href="categories.html"><img src="images/index-img/brm6.jpg" alt=""></a>
+    <a href="categories.html">
+      <h4 class="info-of-img-below">For the Young, Wild & Stylish</h4>
+    </a>
+    <a href="categories.html">
+      <h4 class="info-of-img-below">Just like your way to Conquer</h4>
+    </a>
+    <a href="categories.html">
+      <h4 class="info-of-img-below">Stands out like the Sun</h4>
+    </a>
+  </div>
+  <!-- ALL THE LINKS WILL GO TO categories.html -->
+
+  <br> <br> <br>
+
+  <h2 class="head-of-offer">TRENDING NOW</h2><br>
+  <p class="para-of-offer">From the runway to your wadrobe</p>
+
+  <br><br>
+
+  <!-- ALL THE LINKS WILL GO TO products.html -->
+  <div class="index-grid-img-2">
+    <a href="products.html"><img src="images/index-img/brm14.jpg" id="trans-img" alt=""></a>
+    <a href="products.html"><img src="images/index-img/brm15.jpg" alt=""></a>
+    <a href="products.html"><img src="images/index-img/brm13.jpg" alt=""></a>
+    <a href="products.html"><img src="images/index-img/brw1.jpg" alt="" srcset=""></a>
+    <a href="products.html"><img src="images/index-img/brw2.jpg" alt="" srcset=""></a>
+    <a href="products.html"><img src="images/index-img/brw9.jpg" alt="" srcset=""></a>
+  </div>
+
+  <h2 class="head-of-offer">STYLES TO STEAL</h2><br>
+  <p class="para-of-offer">Inspired by influencer</p>
+
+  <br><br>
+
+  <div class="index-grid-img-3">
+    <a href="products.html"><img src="images\index-img\Woman fashion studio photoshoot poses.jpeg" alt=""></a>
+    <a href="products.html"><img src="images\index-img\The Nordborg Lane Watch.jpeg" alt="" srcset=""></a>
+    <a href="products.html"><img src="images\index-img\Julian Troika Watch.jpeg" alt=""></a>
+    <a href="products.html"><img src="images\index-img\CHOPARD.jpeg" alt="" srcset=""></a>
+  </div>
+  <!-- ALL THE LINKS WILL GO TO products.html -->
+
+  <br><br>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="foot-panel1">
+      <ul style="list-style-type:none;">
+        <h2>CUSTOMER SERVICE</h2>
+        <li>Payment Options</li>
+        <li>Track Order</li>
+        <li>Find a Store</li>
+        <li>Encircle Program</li>
+      </ul>
+
+      <ul style="list-style-type:none;">
+        <h2>POLICIES</h2>
+        <li>Brand Protection</li>
+        <li>Cancellation</li>
+        <li>Shipping</li>
+        <li>Warranty Policies</li>
+        </li>
+      </ul>
+
+      <ul style="list-style-type:none;">
+        <h2>About VortexWatches</h2>
+        <li>About Us</li>
+        <li>Help & Contact</li>
+        <li>Careers</li>
+      </ul>
+
+      <ul style="list-style-type:none;">
+        <h2>CONTACT US</h2>
+        <li>1800-266-3007</li>
+        <li>ustomercare@VortexWatches.co.in</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+
+    <div class="foot-panel2">
+      <h5>Terms and Conditions | Privacy Policy</h5>
+    </div>
+
+    <div class="foot-panel3">
+      <p> <i class="fa-regular fa-copyright"></i> 2023 VortexWatches Company Limited. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- FOOTEER -->
+
+  <!-- nav js -->
+  <script type="text/javascript" src="js/nav.js"></script>
+</body>
+
+</html>

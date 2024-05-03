@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.product-img{
+    display: grid;
+    grid-template-columns: repeat(1,auto-fill(1160px,1fr));
+}
+h1{
+    padding-top: 110px;
+    margin:20px;
+    text-align: center;
+}
+hr{
+    
+    max-width: 200px;
+    border:1px solid #caa529;
+}
+
+.trends-header, .main-head-of-color-gold{
+    color:#caa529;
+}
+.trends-categories, .for-her, .for-him{
+    display:grid;
+    padding-left:50px;
+}
+.trends-categories{
+    grid-template-columns: repeat(3,1fr);
+}
+.for-her{
+    grid-template-columns: repeat(2,1fr);
+}
+.for-him{
+    grid-template-columns: repeat(5,1fr);
+}
+@media screen and (max-width:984px){
+    .trends-categories, .for-her, .for-him{
+        padding-right:20px;
+        padding-left:20px;
+    }
+}
+/* footer */
+.footer{
+    margin-top: 15px;
+    height: 350px;
+    width: auto;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+
+}
+.foot-panel1{
+    background-color: black;
+    color: whitesmoke;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.85rem;
+    flex-flow: wrap;
+    list-style: none;
+    
+}
+.foot-panel2{
+    background-color: #151515;
+    color: whitesmoke;
+    height: 40px;
+    width: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.foot-panel3{
+    height: 20px;
+    width: auto;
+    background-color: black;
+    color: whitesmoke; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.85rem;
+    flex-flow: wrap; 
+    margin-top: 2.5%;
+}
